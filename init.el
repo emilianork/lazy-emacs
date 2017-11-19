@@ -4,5 +4,7 @@
 (require 'core)
 (require 'config)
 
+(lazy-emacs/load-theme 'spacemacs-light "spacemacs-themes")
+
 (lazy-emacs/load-config)
 (lazy-emacs/server-start)

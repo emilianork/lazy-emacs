@@ -1,3 +1,18 @@
+(defun lazy-emacs/load-theme (theme-name &rest theme-dir)
+  (let ((s-theme-name (symbol-name theme-name))
+	(s-theme-dir (mapconcat 'identity theme-dir "")))
+    (let ((filename (concat "~/.emacs.d/themes/"
+                            (if (eq 0 (length s-theme-dir))
+				(concat theme-name "-theme")
+			      s-theme-dir)
+			    "/"
+			    s-theme-name
+			    ".el")))
+
+      (if (file-exists-p filename)
+	  (load filename)
+	(load-theme theme-name t)))))
+
 (defun lazy-emacs/load-config ()
 
   ;;Scroll only only at a time.
