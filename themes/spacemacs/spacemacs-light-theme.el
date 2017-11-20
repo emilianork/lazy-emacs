@@ -1,4 +1,5 @@
-(load "~/.emacs.d/themes/spacemacs-themes/spacemacs-common")
+(if (not (featurep 'spacemacs-common))
+    (load "~/.emacs.d/themes/spacemacs/spacemacs-common"))
 
 (require 'spacemacs-common)
 
