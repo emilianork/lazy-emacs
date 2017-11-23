@@ -1,0 +1,64 @@
+[submodule "packages/company"]
+	path = packages/company
+	url = git@github.com:company-mode/company-mode.git
+	branch = master
+[submodule "packages/esup"]
+	path = packages/esup
+	url = git@github.com:jschaf/esup.git
+	branch = master
+[submodule "packages/rainbow-delimiters"]
+	path = packages/rainbow-delimiters
+	url = git@github.com:Fanael/rainbow-delimiters.git
+	branch = master
+[submodule "packages/vlf"]
+	path = packages/vlf
+	url = git@github.com:m00natic/vlfi.git
+	branch = master
+[submodule "packages/swiper"]
+	path = packages/swiper
+	url = git@github.com:abo-abo/swiper.git
+	branch = master
+[submodule "packages/powerline"]
+	path = packages/powerline
+	url = git@github.com:milkypostman/powerline.git
+	branch = master
+[submodule "packages/async"]
+	path = packages/async
+	url = git@github.com:jwiegley/emacs-async.git
+	branch = master
+[submodule "packages/dash"]
+	path = packages/dash
+	url = git@github.com:magnars/dash.el.git
+	branch = master
+[submodule "packages/with-editor"]
+	path = packages/with-editor
+	url = git@github.com:magit/with-editor.git
+	branch = master
+[submodule "packages/magit-popup"]
+	path = packages/magit-popup
+	url = git@github.com:magit/magit-popup.git
+	branch = master
+[submodule "packages/magit"]
+	path = packages/magit
+	url = git@github.com:magit/magit.git
+	branch = master
+[submodule "packages/editorconfig"]
+	path = packages/editorconfig
+	url = git@github.com:editorconfig/editorconfig-emacs.git
+	branch = master
+[submodule "themes/cyberpunk"]
+	path = themes/cyberpunk
+	url = git@github.com:n3mo/cyberpunk-theme.el.git
+	branch = master
+[submodule "themes/monokai-alt"]
+	path = themes/monokai-alt
+	url = git@github.com:dawidof/emacs-monokai-theme.git
+	branch = master
+[submodule "themes/spacemacs"]
+	path = themes/spacemacs
+	url = git@github.com:nashamri/spacemacs-theme.git
+	branch = master
+[submodule "themes/monokai"]
+	path = themes/monokai
+	url = git@github.com:oneKelvinSmith/monokai-emacs.git
+	branch = master

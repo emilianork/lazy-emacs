@@ -24,3 +24,5 @@ elim/
 session*
 tramp
 \#*
+recentf
+.cache

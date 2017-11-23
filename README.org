@@ -1,0 +1,30 @@
+* lazy-emacs
+
+*** Keep in mind that this project is my attempt to learn elisp.
+
+Another configuriation system where everything file and feature is lazy loaded (even the themes).
+
+** Currently themes available
+
+1. cyberpunk
+2. monokai-alt
+3. monokai
+4. spacemacs-light
+5. spacemacs-dark
+
+#+BEGIN_SRC emacs-lisp
+(lazy-emacs/load-theme 'cyberpunk)
+(lazy-emacs/load-theme 'monokai-alt)
+(lazy-emacs/load-theme 'monokai)
+(lazy-emacs/load-theme 'spacemacs-light "spacemacs" 'spacemacs-common)
+(lazy-emacs/load-theme 'spacemacs-dark "spacemacs" 'spacemacs-common)
+#+END_SRC
+
+** Notes
+
+1. The only packages that aren't submodules are paredit and undo-tree. That's because I didn't found their repositories.
+
+2. In order to load a new submodule to the packages subdirectory run:
+#+BEGIN_SRC shell
+git submodule add -b master "git-url" "packages/package-name"
+#+END_SRC

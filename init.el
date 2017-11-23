@@ -1,9 +1,8 @@
-(add-to-list 'load-path "~/.emacs.d/core/")
-(load "~/.emacs.d/config")
+(add-to-list 'load-path "~/.emacs.d/core")
 
 (require 'core)
-(require 'config)
+(lazy-emacs/require 'config "~/.emacs.d/config")
 
-(lazy-emacs/load-theme 'spacemacs-dark "spacemacs")
+(lazy-emacs/load-theme 'spacemacs-light "spacemacs" 'spacemacs-common)
 (lazy-emacs/load-config)
 (lazy-emacs/server-start)
