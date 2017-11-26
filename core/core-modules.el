@@ -4,5 +4,8 @@
 (require 'undo-tree-config)
 (require 'powerline-config)
 (require 'vlf-config)
+(require 'uniquify-config)
+(require 'exec-path-from-shell-config)
+(require 'multi-term-config)
 
 (provide 'core-modules)

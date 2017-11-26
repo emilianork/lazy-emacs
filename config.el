@@ -14,7 +14,7 @@
   ;; Indentation
   (setq-default ndent-tabs-mode nil)
 
-  ;;No save file like #..
+  ;; No save file like #..
   (setq make-backup-files nil)
 
   ;;No Splash
@@ -24,15 +24,20 @@
   ;; Initial major mode
   (setq initial-major-mode 'text-mode)
 
-  ;;No icons no scroll-bar
+  ;; No icons no scroll-bar
   (tool-bar-mode -1)
   (toggle-scroll-bar -1)
+
+  ;; Right metadata recerved for Mac
+  (setq mac-option-key-is-meta t)
+  (setq mac-right-option-modifier nil)
 
   (put 'downcase-region 'disabled nil)
   (setq-default indent-tabs-mode nil)
 
   (setq ispell-dictionary "castellano")
 
+  ;; Shows number column
   (setq column-number-mode t)
 
   (global-set-key (kbd "C-=") 'text-scale-increase)

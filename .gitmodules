@@ -62,3 +62,35 @@
 	path = themes/monokai
 	url = git@github.com:oneKelvinSmith/monokai-emacs.git
 	branch = master
+[submodule "packages/multi-term"]
+	path = packages/multi-term
+	url = git@github.com:emacsorphanage/multi-term.git
+	branch = master
+[submodule "packages/clojure-mode"]
+	path = packages/clojure-mode
+	url = git@github.com:clojure-emacs/clojure-mode.git
+	branch = master
+[submodule "packages/cider"]
+	path = packages/cider
+	url = git@github.com:clojure-emacs/cider.git
+	branch = master
+[submodule "packages/pkg-info"]
+	path = packages/pkg-info
+	url = git@github.com:lunaryorn/pkg-info.el.git
+	branch = master
+[submodule "packages/epl"]
+	path = packages/epl
+	url = git@github.com:cask/epl.git
+	branch = master
+[submodule "packages/spinner"]
+	path = packages/spinner
+	url = git@github.com:Malabarba/spinner.el.git
+	branch = master
+[submodule "packages/exec-path-from-shell"]
+	path = packages/exec-path-from-shell
+	url = git@github.com:purcell/exec-path-from-shell.git
+	branch = master
+[submodule "packages/aggressive-indent"]
+	path = packages/aggressive-indent
+	url = git@github.com:Malabarba/aggressive-indent-mode.git
+	branch = master

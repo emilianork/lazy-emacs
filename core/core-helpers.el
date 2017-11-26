@@ -52,7 +52,7 @@ ADDITIONAL-LIB must be in the same directory."
 Sometimes this folder contains more packages to be load, REST-PACKAGES
 load the rest of the packages that contains PACKAGE-NAME."
   (let ((path (concat "~/.emacs.d/packages/" (symbol-name package-name)
-                      (if (stringp special-dir) (concat "/" special-dir) ""))))
+		      (if (stringp special-dir) (concat "/" special-dir) ""))))
 
     (add-to-list 'load-path path))
 
@@ -61,7 +61,7 @@ load the rest of the packages that contains PACKAGE-NAME."
   (if (and special-dir (not (stringp special-dir))) (require special-dir))
 
   (mapcar (lambda (x) (require x))
-          rest-packages))
+	  rest-packages))
 
 (defun lazy-emacs/load-file (feature file-name)
   "Checks if the FEATURE was already loaded, in case that it's new
