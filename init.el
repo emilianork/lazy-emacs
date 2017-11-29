@@ -3,6 +3,9 @@
 (require 'core)
 (lazy-emacs/require 'config "~/.emacs.d/config")
 
-(lazy-emacs/load-theme 'spacemacs-light "spacemacs" 'spacemacs-common)
+(lazy-emacs/load-theme 'wombat)
 (lazy-emacs/load-config)
 (lazy-emacs/server-start)
+
+;; Extra emacs self added config
+(put 'erase-buffer 'disabled nil)

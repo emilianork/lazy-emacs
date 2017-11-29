@@ -2,7 +2,7 @@
 
 *** Keep in mind that this project is my attempt to learn elisp.
 
-Another configuriation system where everything file and feature is lazy loaded 
+Another configuriation system where everything file and feature is lazy loaded
 (even the themes).
 
 ** Currently themes available
@@ -28,6 +28,7 @@ Another configuriation system where everything file and feature is lazy loaded
   - undo-tree
   - seq
   - queue
+  - tex-site (AKA auctex)
 
 - In order to load a new submodule to the packages subdirectory run:
 #+BEGIN_SRC shell

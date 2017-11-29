@@ -2,33 +2,34 @@
   (if (not (featurep 'clojure-mode))
       (progn
         (lazy-emacs/require-package 'clojure-mode)
-        (clojure-mode)
 
-        (add-hook 'clojure-mode-hook 'lazy-emacs/clojure-mode-keys)
-        (add-hook 'clojure-mode-hook 'lazy-emacs/clojure-mode-load)))
+        (add-hook 'clojure-mode-hook 'lazy-emacs/clojure-mode-load)
+        (clojure-mode)))
 
+  (lazy-emacs/require-package 'aggressive-indent)
+  (lazy-emacs/require-package 'company)
   (lazy-emacs/require-package 'editorconfig)
   (lazy-emacs/require-package 'paredit)
   (lazy-emacs/require-package 'rainbow-delimiters)
-  (lazy-emacs/require-package 'company)
-  (lazy-emacs/require-package 'aggressive-indent)
 
   (lazy-emacs/load-magit)
   (lazy-emacs/load-cider)
+  (lazy-emacs/load-dumb-jump)
 
   (aggressive-indent-mode t)
+  (company-mode t)
+  (dumb-jump-mode t)
+  (editorconfig-mode t)
   (paredit-mode t)
   (rainbow-delimiters-mode t)
-  (company-mode t)
   (show-paren-mode t)
-  (editorconfig-mode t))
+
+  (lazy-emacs/clojure-mode-keys))
 
 (defun lazy-emacs/clojure-mode-keys ()
   (interactive)
-  (message "Loading clojure keys")
   (local-set-key (kbd "C-c M-f") 'lazy-emacs/cider-figwheel-repl)
   (local-set-key (kbd "M-n g s") 'magit-status))
-
 
 (defun lazy-emacs/cider-figwheel-repl ()
   (interactive)

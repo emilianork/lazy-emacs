@@ -1,16 +1,20 @@
 (defun lazy-emacs/elisp-minor-modes ()
+  (lazy-emacs/require-package 'aggressive-indent)
+  (lazy-emacs/require-package 'company 'company-elisp)
   (lazy-emacs/require-package 'editorconfig)
   (lazy-emacs/require-package 'paredit)
   (lazy-emacs/require-package 'rainbow-delimiters)
-  (lazy-emacs/require-package 'company 'company-elisp)
 
   (lazy-emacs/load-magit)
+  (lazy-emacs/load-dumb-jump)
 
+  (aggressive-indent-mode t)
+  (company-mode t)
+  (dumb-jump-mode t)
+  (editorconfig-mode t)
   (paredit-mode t)
   (rainbow-delimiters-mode t)
-  (company-mode t)
-  (show-paren-mode t)
-  (editorconfig-mode t))
+  (show-paren-mode t))
 
 (defun lazy-emacs/elisp-mode-keys ()
   "Special keys for emacs-lisp-mode"

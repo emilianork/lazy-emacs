@@ -94,3 +94,23 @@
 	path = packages/aggressive-indent
 	url = git@github.com:Malabarba/aggressive-indent-mode.git
 	branch = master
+[submodule "packages/dumb-jump"]
+	path = packages/dumb-jump
+	url = git@github.com:jacktasia/dumb-jump.git
+	branch = master
+[submodule "packages/f"]
+	path = packages/f
+	url = git@github.com:rejeep/f.el.git
+	branch = master
+[submodule "packages/popup"]
+	path = packages/popup
+	url = git@github.com:auto-complete/popup-el.git
+	branch = master
+[submodule "packages/s"]
+	path = packages/s
+	url = git@github.com:magnars/s.el.git
+	branch = master
+[submodule "packages/dockerfile-mode"]
+	path = packages/dockerfile-mode
+	url = git@github.com:spotify/dockerfile-mode.git
+	branch = master
