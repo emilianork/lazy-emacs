@@ -1,7 +1,7 @@
 (require 'core-helpers)
-(require 'core-modules)
-
-(require 'shared-libraries)
 (require 'core-layers)
+(require 'core-modules)
+(require 'custom-functions)
+(require 'shared-libraries)
 
 (provide 'core)

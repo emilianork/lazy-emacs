@@ -114,3 +114,11 @@
 	path = packages/dockerfile-mode
 	url = git@github.com:spotify/dockerfile-mode.git
 	branch = master
+[submodule "packages/markdown-mode"]
+	path = packages/markdown-mode
+	url = git@github.com:jrblevin/markdown-mode.git
+	branch = master
+[submodule "packages/yaml-mode"]
+	path = packages/yaml-mode
+	url = git@github.com:yoshiki/yaml-mode.git
+	branch = master
