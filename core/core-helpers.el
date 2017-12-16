@@ -19,10 +19,10 @@ ADDITIONAL-LIB must be in the same directory."
 
   (let ((s-theme-name (symbol-name theme-name)))
     (let ((file-name (concat "~/.emacs.d/themes/"
-                            (if theme-dir theme-dir s-theme-name)
-			    "/"
-			    s-theme-name
-			    "-theme.el")))
+                             (if theme-dir theme-dir s-theme-name)
+                             "/"
+                             s-theme-name
+                             "-theme.el")))
 
       (let ((file-path (file-name-directory file-name)))
 	(if (and (file-exists-p file-name)
@@ -36,10 +36,14 @@ ADDITIONAL-LIB must be in the same directory."
 
       (load-theme theme-name t))))
 
+(defun lazy-emacs/recompile-emacs-d ()
+  (interactive)
+  (byte-recompile-directory (expand-file-name "~/.emacs.d/") 0))
+
 (defun lazy-emacs/reload-init ()
   "Reloads the ~/.emacs.d/init.el"
   (interactive)
-  (byte-recompile-directory (expand-file-name "~/.emacs.d/") 0)
+  (lazy-emacs/recompile-emacs-d)
   (load "~/.emacs.d/init.el"))
 
 (defun lazy-emacs/startup-profiler ()

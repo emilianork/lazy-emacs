@@ -34,3 +34,8 @@ Another configuriation system where everything file and feature is lazy loaded
 #+BEGIN_SRC shell
 git submodule add -b master "git-url" "packages/package-name"
 #+END_SRC
+
+
+** Development tips
+
+Use `find . -name '*.elc' -type f -delete` to delete all compile elisp generated
