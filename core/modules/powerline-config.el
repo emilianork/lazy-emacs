@@ -1,4 +1,7 @@
 (lazy-emacs/require-package 'powerline)
+(lazy-emacs/require-package 'nyan-mode)
+
+(nyan-mode)
 
 ;; "Custom lazy-emacs theme"
 

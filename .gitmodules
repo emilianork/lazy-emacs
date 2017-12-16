@@ -134,3 +134,7 @@
 	path = packages/json-mode
 	url = git@github.com:joshwnj/json-mode
 	branch = master
+[submodule "packages/nyan-mode"]
+	path = packages/nyan-mode
+	url = git@github.com:TeMPOraL/nyan-mode.git
+	branch = master
