@@ -122,3 +122,15 @@
 	path = packages/yaml-mode
 	url = git@github.com:yoshiki/yaml-mode.git
 	branch = master
+[submodule "packages/json-reformat"]
+	path = packages/json-reformat
+	url = git@github.com:gongo/json-reformat.git
+	branch = master
+[submodule "packages/json-snatcher"]
+	path = packages/json-snatcher
+	url = git@github.com:Sterlingg/json-snatcher
+	branch = master
+[submodule "packages/json-mode"]
+	path = packages/json-mode
+	url = git@github.com:joshwnj/json-mode
+	branch = master

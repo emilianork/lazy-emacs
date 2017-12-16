@@ -23,7 +23,7 @@ Another configuriation system where everything file and feature is lazy loaded
 
 ** Notes
 
-- The only packages that aren't submodules of git (the where found on elpa) are:
+- The only packages that aren't submodules of git (only found on elpa) are:
   - paredit
   - undo-tree
   - seq

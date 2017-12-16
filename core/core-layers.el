@@ -1,6 +1,7 @@
 (lazy-emacs/require-layer 'clojure-layer)
 (lazy-emacs/require-layer 'docker-layer)
 (lazy-emacs/require-layer 'emacs-lisp-layer)
+(lazy-emacs/require-layer 'json-layer)
 (lazy-emacs/require-layer 'latex-layer)
 (lazy-emacs/require-layer 'markdown-layer)
 (lazy-emacs/require-layer 'python-layer)
