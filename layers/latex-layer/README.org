@@ -1,0 +1,9 @@
+** Major and minor modes
+
+- auctex (https://www.gnu.org/software/auctex/)
+
+** Minor keys
+
+|---------+--------------------------------|
+| Keys    | Command                        |
+|---------+--------------------------------|

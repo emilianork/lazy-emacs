@@ -1,0 +1,10 @@
+** Major and minor modes
+
+- magit (https://github.com/magit/magit/)
+
+** Minor keys
+
+|---------+--------------------------------|
+| Keys    | Command                        |
+|---------+--------------------------------|
+| M-n g s | magit-status                   |

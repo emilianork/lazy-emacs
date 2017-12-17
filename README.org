@@ -1,5 +1,13 @@
 * lazy-emacs
 
+** Install
+
+After cloning and coping the repo to `~/.emacs.d` run the following command:
+
+```sh
+$ git submodule update --init --recursive
+```
+
 *** Keep in mind that this project is my attempt to learn elisp.
 
 Another configuriation system where everything file and feature is lazy loaded
@@ -8,17 +16,19 @@ Another configuriation system where everything file and feature is lazy loaded
 ** Currently themes available
 
 1. cyberpunk
-2. monokai-alt
-3. monokai
-4. spacemacs-light
-5. spacemacs-dark
+2. dracula
+3. monokai-alt
+4. monokai
+5. spacemacs-light
+6. spacemacs-dark
 
 #+BEGIN_SRC emacs-lisp
 (lazy-emacs/load-theme 'cyberpunk)
-(lazy-emacs/load-theme 'monokai-alt)
+(lazy-emacs/load-theme 'dracula)
 (lazy-emacs/load-theme 'monokai)
-(lazy-emacs/load-theme 'spacemacs-light "spacemacs" 'spacemacs-common)
+(lazy-emacs/load-theme 'monokai-alt)
 (lazy-emacs/load-theme 'spacemacs-dark "spacemacs" 'spacemacs-common)
+(lazy-emacs/load-theme 'spacemacs-light "spacemacs" 'spacemacs-common)
 #+END_SRC
 
 ** Notes

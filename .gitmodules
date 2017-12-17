@@ -138,3 +138,7 @@
 	path = packages/nyan-mode
 	url = git@github.com:TeMPOraL/nyan-mode.git
 	branch = master
+[submodule "themes/dracula"]
+	path = themes/dracula
+	url = git@github.com:dracula/emacs.git
+	branch = master

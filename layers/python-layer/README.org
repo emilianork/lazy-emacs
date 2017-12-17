@@ -1,0 +1,13 @@
+** Major and minor modes
+
+- company (https://github.com/company-mode/company-mode/)
+- dumb-jump (https://github.com/jacktasia/dumb-jump/)
+- editorconfig (https://github.com/editorconfig/editorconfig-emacs/)
+- magit (https://github.com/magit/magit/)
+
+** Minor keys
+
+|---------+--------------------------------|
+| Keys    | Command                        |
+|---------+--------------------------------|
+| M-n g s | magit-status                   |

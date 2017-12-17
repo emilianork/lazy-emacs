@@ -1,0 +1,9 @@
+** Major and minor modes
+
+- yaml-mode (https://github.com/yoshiki/yaml-mode)
+
+** Minor keys
+
+|---------+--------------------------------|
+| Keys    | Command                        |
+|---------+--------------------------------|
