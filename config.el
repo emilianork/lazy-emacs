@@ -40,7 +40,12 @@
   ;; Shows number column
   (setq column-number-mode t)
 
+  ;; Internal border
+  (setq internal-border-width 10)
+
   (global-set-key (kbd "C-=") 'text-scale-increase)
-  (global-set-key (kbd "C--") 'text-scale-decrease))
+  (global-set-key (kbd "C--") 'text-scale-decrease)
+
+  (setq-default show-trailing-whitespace t))
 
 (provide 'config)

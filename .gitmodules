@@ -186,7 +186,3 @@
 	path = packages/git-gutter
 	url = git@github.com:syohex/emacs-git-gutter.git
 	branch = master
-[submodule "packages/use-package"]
-	path = packages/use-package
-	url = git@github.com:jwiegley/use-package.git
-	branch = master

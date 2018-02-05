@@ -1,3 +1,7 @@
+(custom-set-variables
+ '(cider-cljs-lein-repl
+   "(do (require 'cljs.repl.node) (cemerick.piggieback/cljs-repl (cljs.repl.node/repl-env)))"))
+
 (defun lazy-emacs/clojure-mode-load ()
   (if (not (featurep 'clojure-mode))
       (progn
@@ -23,6 +27,7 @@
   (paredit-mode t)
   (rainbow-delimiters-mode t)
   (show-paren-mode t)
+  (which-func-mode)
 
   (lazy-emacs/clojure-mode-keys))
 

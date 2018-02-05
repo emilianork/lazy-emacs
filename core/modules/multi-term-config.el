@@ -10,14 +10,11 @@ directory to make multiple shell windows easier."
   (let* ((parent (if (buffer-file-name)
                      (file-name-directory (buffer-file-name))
                    default-directory))
-         (height (/ (window-total-height) 3))
-         (name   (car (last (split-string parent "/" t)))))
+         (height (/ (window-total-height) 2)))
     (split-window-vertically (- height))
     (other-window 1)
     (multi-term)
-    (rename-buffer (concat "*multi-term: " name "*"))
-
-    (insert (concat "ls"))))
+    (rename-buffer (concat "Terminal: " parent))))
 
 (defun lazy-emacs/multi-term-kill ()
   "Send ESC in term mode."

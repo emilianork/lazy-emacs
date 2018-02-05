@@ -1,6 +1,7 @@
 (add-to-list 'load-path "~/.emacs.d/core/modules")
 
 (require 'exec-path-from-shell-config)
+(require 'fringes-config)
 (require 'magit-config)
 (require 'multi-term-config)
 (require 'powerline-config)

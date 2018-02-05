@@ -14,7 +14,8 @@
   (editorconfig-mode t)
   (paredit-mode t)
   (rainbow-delimiters-mode t)
-  (show-paren-mode t))
+  (show-paren-mode t)
+  (which-func-mode))
 
 (defun lazy-emacs/elisp-mode-keys ()
   "Special keys for emacs-lisp-mode"

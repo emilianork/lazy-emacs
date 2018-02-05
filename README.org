@@ -17,18 +17,24 @@ Another configuriation system where everything file and feature is lazy loaded
 
 1. cyberpunk
 2. dracula
-3. monokai-alt
-4. monokai
-5. spacemacs-light
-6. spacemacs-dark
+3. material
+4. material light
+5. monokai-alt
+6. monokai
+7. spacemacs-light
+8. spacemacs-dark
+9. sunburn
 
 #+BEGIN_SRC emacs-lisp
 (lazy-emacs/load-theme 'cyberpunk)
 (lazy-emacs/load-theme 'dracula)
+(lazy-emacs/load-theme 'material)
+(lazy-emacs/load-theme 'material-light "material")
 (lazy-emacs/load-theme 'monokai)
 (lazy-emacs/load-theme 'monokai-alt)
 (lazy-emacs/load-theme 'spacemacs-dark "spacemacs" 'spacemacs-common)
 (lazy-emacs/load-theme 'spacemacs-light "spacemacs" 'spacemacs-common)
+(lazy-emacs/load-theme 'sunburn)
 #+END_SRC
 
 ** Notes
