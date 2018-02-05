@@ -142,3 +142,51 @@
 	path = themes/dracula
 	url = git@github.com:dracula/emacs.git
 	branch = master
+[submodule "themes/sunburn"]
+	path = themes/sunburn
+	url = git@github.com:mvarela/Sunburn-Theme.git
+	branch = master
+[submodule "themes/material"]
+	path = themes/material
+	url = git@github.com:cpaulik/emacs-material-theme
+	branch = master
+[submodule "packages/terraform-mode"]
+	path = packages/terraform-mode
+	url = git@github.com:syohex/emacs-terraform-mode.git
+	branch = master
+[submodule "packages/hcl-mode"]
+	path = packages/hcl-mode
+	url = git@github.com:syohex/emacs-hcl-mode.git
+	branch = master
+[submodule "packages/company-terraform"]
+	path = packages/company-terraform
+	url = git@github.com:rafalcieslak/emacs-company-terraform.git
+	branch = master
+[submodule "packages/go-mode"]
+	path = packages/go-mode
+	url = git@github.com:dominikh/go-mode.el.git
+	branch = master
+[submodule "packages/company-go"]
+	path = packages/company-go
+	url = git@github.com:nsf/gocode.git
+	branch = master
+[submodule "packages/fringes"]
+	path = packages/fringes
+	url = git@github.com:SpecialBomb/emacs-minimal-fringes.git
+	branch = master
+[submodule "packages/git-gutter-fringe"]
+	path = packages/git-gutter-fringe
+	url = git@github.com:syohex/emacs-git-gutter-fringe.git
+	branch = master
+[submodule "packages/fringe-helper"]
+	path = packages/fringe-helper
+	url = git@github.com:nschum/fringe-helper.el.git
+	branch = master
+[submodule "packages/git-gutter"]
+	path = packages/git-gutter
+	url = git@github.com:syohex/emacs-git-gutter.git
+	branch = master
+[submodule "packages/use-package"]
+	path = packages/use-package
+	url = git@github.com:jwiegley/use-package.git
+	branch = master
