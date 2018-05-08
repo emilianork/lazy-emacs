@@ -1,7 +1,8 @@
 (lazy-emacs/require-package 'powerline)
 (lazy-emacs/require-package 'nyan-mode)
 
-(nyan-mode)
+;;(nyan-mode)
+;;(nyan-start-animation)
 
 ;; "Custom lazy-emacs theme"
 
@@ -20,6 +21,27 @@
   :group 'powerline
   :type 'boolean)
 
+(custom-set-variables
+ '(powerline-gui-use-vcs-glyph t)
+ '(powerline-height 25)
+ '(powerline-default-separator 'bar))
+
+;; (custom-set-faces
+;;  '(powerline-active1 ((t (:inherit mode-line :background "grey17" :foreground "white" :inherit mode-line))))
+;;  '(powerline-active2 ((t (:inherit mode-line :background "grey17" :foreground "white" :inherit mode-line))))
+;;  '(powerline-inactive0 ((t (:inherit mode-line-inactive :background "grey17"))))
+;;  '(powerline-inactive1 ((t (:inherit mode-line-inactive :background "grey17"))))
+;;  '(powerline-inactive2 ((t (:inherit mode-line-inactive :background "grey17"))))
+;;  )
+
+(custom-set-faces
+ '(powerline-active1 ((t (:inherit mode-line :background "grey" :foreground "white" :inherit mode-line))))
+ '(powerline-active2 ((t (:inherit mode-line :background "grey" :foreground "white" :inherit mode-line))))
+ '(powerline-inactive0 ((t (:inherit mode-line-inactive :background "grey" :foreground "white"))))
+ '(powerline-inactive1 ((t (:inherit mode-line-inactive :background "grey" :foreground "white"))))
+ '(powerline-inactive2 ((t (:inherit mode-line-inactive :background "grey" :foreground "white"))))
+ )
+
 (defun powerline-lazy-emacs-theme ()
   "Setup the lazy-emacs mode-line."
   (interactive)
@@ -33,7 +55,7 @@
                           (face1 (if active 'powerline-active1 'powerline-inactive1))
                           (face2 (if active 'powerline-active2 'powerline-inactive2))
                           (separator-left (intern (format "powerline-%s-%s"
-							  (powerline-current-separator)
+                                                          (powerline-current-separator)
                                                           (car powerline-default-separator-dir))))
                           (separator-right (intern (format "powerline-%s-%s"
                                                            (powerline-current-separator)
@@ -54,6 +76,7 @@
                                      (powerline-process face1)
                                      ;; I just need to see the major mode
                                      ;; (powerline-minor-modes face1 'l)
+                                     ;;
                                      (powerline-narrow face1 'l)
                                      (powerline-raw " " face1)
                                      (funcall separator-left face1 face2)

@@ -1,6 +1,13 @@
 (defun lazy-emacs/load-config ()
+  ;; Cursor customization
+  (global-hl-line-mode t)
+  (setq-default cursor-type 'hbar)
+
   ;;Scroll only only at a time.
   (setq scroll-step 1)
+
+  ;; Font size of 12pts
+  (set-face-attribute 'default nil :height 110)
 
   ;; don't accelerate scrolling
   (setq mouse-wheel-progressive-speed nil)
@@ -46,6 +53,8 @@
   (global-set-key (kbd "C-=") 'text-scale-increase)
   (global-set-key (kbd "C--") 'text-scale-decrease)
 
-  (setq-default show-trailing-whitespace t))
+  (setq-default show-trailing-whitespace t)
+
+  (lazy-emacs/diminish-minor-modes))
 
 (provide 'config)

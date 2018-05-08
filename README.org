@@ -15,17 +15,19 @@ Another configuriation system where everything file and feature is lazy loaded
 
 ** Currently themes available
 
-1. cyberpunk
-2. dracula
-3. material
-4. material light
-5. monokai-alt
-6. monokai
-7. spacemacs-light
-8. spacemacs-dark
-9. sunburn
++ challenger-deep-theme
++ cyberpunk
++ dracula
++ material
++ material light
++ monokai
++ monokai-alt
++ spacemacs-dark
++ spacemacs-light
++ sunburn
 
 #+BEGIN_SRC emacs-lisp
+(lazy-emacs/load-theme 'challenger-deep "challenger-deep-theme")
 (lazy-emacs/load-theme 'cyberpunk)
 (lazy-emacs/load-theme 'dracula)
 (lazy-emacs/load-theme 'material)

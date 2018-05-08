@@ -34,9 +34,40 @@
                         (cons (current-buffer)
                               (mapcar (lambda (x) (process-buffer x)) (process-list))))))
 
+
+;; Code from FrankRuben27 reddit user
+(defun lazy-emacs/goto-line-with-feedback ()
+  "Show line numbers temporarily, while prompting for the line number input"
+  (interactive)
+  (unwind-protect
+      (progn
+        (linum-mode 1)
+        (call-interactively #'goto-line))
+    (linum-mode -1)))
+
 (global-set-key (kbd "M-n b r") 'lazy-emacs/revert-buffer-no-confirm)
 (global-set-key (kbd "M-n b i") 'lazy-emacs/indent-whole-buffer)
 (global-set-key (kbd "M-n b k") 'lazy-emacs/kill-other-buffers)
 
+;; go-to is binded to more than one keyscombination
+(global-set-key (kbd "M-g M-g") 'lazy-emacs/goto-line-with-feedback)
+(global-set-key (kbd "M-g g")   'lazy-emacs/goto-line-with-feedback)
+
+(defun lazy-emacs/diminish-minor-modes ()
+  "Removes from the mode-line some minor modes"
+  (interactive)
+
+  (lazy-emacs/require-package 'diminish)
+
+  (diminish 'aggressive-indent-mode)
+  (diminish 'auto-revert-mode)
+  (diminish 'beacon-mode)
+  (diminish 'company-mode)
+  (diminish 'editorconfig-mode)
+  (diminish 'git-gutter-mode)
+  (diminish 'ivy-mode)
+  (diminish 'paredit-mode)
+  (diminish 'undo-tree-mode)
+  (diminish 'zoom-mode))
 
 (provide 'custom-functions)

@@ -1,5 +1,6 @@
 (require 'server)
 
+
 (defun lazy-emacs/server-start ()
   "Starts a new server only if there is no other already"
 
@@ -78,8 +79,9 @@ then is loaded from FILE-NAME."
   (lazy-emacs/load-file feature file-path)
   (require feature))
 
+
 (defun lazy-emacs/require-layer (layer-name)
-  "Loads the corresponding LAYER-NAME, remmenber that inside the
+  "Loads the corresponding LAYER-NAME, remenber that inside the
 layer, everything is especfied to be laziness loaded."
   (let ((s-layer-name (symbol-name layer-name)))
     (lazy-emacs/require

@@ -1,5 +1,7 @@
 (defun lazy-emacs/dired-minor-modes ()
-  (lazy-emacs/load-magit))
+  (lazy-emacs/load-magit)
+
+  (lazy-emacs/diminish-minor-modes))
 
 (defun lazy-emacs/dired-mode-keys ()
   (interactive)

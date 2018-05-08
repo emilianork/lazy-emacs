@@ -15,6 +15,8 @@
   (lazy-emacs/load-magit)
   (lazy-emacs/load-dumb-jump)
 
+  (lazy-emacs/diminish-minor-modes)
+
   (aggressive-indent-mode t)
   (company-mode t)
   (dumb-jump-mode t)

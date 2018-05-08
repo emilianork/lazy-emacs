@@ -13,6 +13,8 @@
 
   (lazy-emacs/load-magit)
 
+  (lazy-emacs/diminish-minor-modes)
+
   (aggressive-indent-mode t)
   (company-mode t)
   (editorconfig-mode t)

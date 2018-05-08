@@ -5,6 +5,8 @@
   (lazy-emacs/load-magit)
   (lazy-emacs/load-dumb-jump)
 
+  (lazy-emacs/diminish-minor-modes)
+
   (company-mode t)
   (dumb-jump-mode t)
   (editorconfig-mode t)

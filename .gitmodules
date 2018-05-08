@@ -170,8 +170,8 @@
 	path = packages/company-go
 	url = git@github.com:nsf/gocode.git
 	branch = master
-[submodule "packages/fringes"]
-	path = packages/fringes
+[submodule "packages/minimal-fringes"]
+	path = packages/minimal-fringes
 	url = git@github.com:SpecialBomb/emacs-minimal-fringes.git
 	branch = master
 [submodule "packages/git-gutter-fringe"]
@@ -185,4 +185,56 @@
 [submodule "packages/git-gutter"]
 	path = packages/git-gutter
 	url = git@github.com:syohex/emacs-git-gutter.git
+	branch = master
+[submodule "packages/kpm-list"]
+	path = packages/kpm-list
+	url = git@github.com:KMahoney/kpm-list.git
+	branch = master
+[submodule "packages/zoom"]
+	path = packages/zoom
+	url = git@github.com:cyrus-and/zoom.git
+	branch = master
+[submodule "packages/ghub"]
+	path = packages/ghub
+	url = git@github.com:magit/ghub.git
+	branch = master
+[submodule "packages/beacon"]
+	path = packages/beacon
+	url = git@github.com:Malabarba/beacon.git
+	branch = master
+[submodule "packages/counsel-tramp"]
+	path = packages/counsel-tramp
+	url = git@github.com:masasam/emacs-counsel-tramp.git
+	branch = master
+[submodule "packages/tablist"]
+	path = packages/tablist
+	url = git@github.com:politza/tablist.git
+	branch = master
+[submodule "packages/docker-tramp"]
+	path = packages/docker-tramp
+	url = git@github.com:emacs-pe/docker-tramp.el.git
+	branch = master
+[submodule "packages/docker"]
+	path = packages/docker
+	url = git@github.com:Silex/docker.el.git
+	branch = master
+[submodule "packages/elfeed"]
+	path = packages/elfeed
+	url = git@github.com:skeeto/elfeed.git
+	branch = master
+[submodule "packages/alert"]
+	path = packages/alert
+	url = git@github.com:jwiegley/alert.git
+	branch = master
+[submodule "packages/diminish"]
+	path = packages/diminish
+	url = git@github.com:myrjola/diminish.el.git
+	branch = master
+[submodule "themes/challenger-deep-theme"]
+	path = themes/challenger-deep-theme
+	url = git@github.com:challenger-deep-theme/emacs.git
+	branch = master
+[submodule "packages/csv"]
+	path = packages/csv
+	url = git@gitlab.com:u11/csv.el.git
 	branch = master

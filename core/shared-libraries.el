@@ -1,5 +1,8 @@
 (defun lazy-emacs/load-magit ()
   (interactive)
+
+  (lazy-emacs/require-package 'let-alist)
+  (lazy-emacs/require-package 'ghub)
   (lazy-emacs/require-package 'async)
   (lazy-emacs/require-package 'dash)
   (lazy-emacs/require-package 'with-editor)
@@ -39,5 +42,30 @@
   (lazy-emacs/require-package 'popup)
 
   (lazy-emacs/require-package 'dumb-jump))
+
+(defun lazy-emacs/load-docker-mode ()
+  (interactive)
+
+  (lazy-emacs/require-package 'dash)
+  (lazy-emacs/require-package 'async)
+  (lazy-emacs/require-package 'magit-popup)
+
+  (lazy-emacs/require-package 's)
+
+  (lazy-emacs/require-package 'json-reformat)
+  (lazy-emacs/require-package 'json-snatcher)
+  (lazy-emacs/require-package 'json-mode)
+
+  (lazy-emacs/require-package 'tablist)
+
+  (lazy-emacs/require-package 'docker-tramp)
+
+  (lazy-emacs/require-package 'docker
+                              'docker-images
+                              'docker-containers
+                              'docker-machine
+                              'docker-networks
+                              'docker-process
+                              'docker-volumes))
 
 (provide 'shared-libraries)

@@ -23,6 +23,8 @@
 
         (add-hook 'TeX-mode-hook '(lambda () (setq TeX-command-default "latexmk-dvi")))))
 
+  (lazy-emacs/diminish-minor-modes)
+
   (LaTeX-mode)
 
   (setq TeX-auto-save t)

@@ -13,6 +13,8 @@
 
   (lazy-emacs/load-magit)
 
+  (lazy-emacs/diminish-minor-modes)
+
   (company-mode t)
   (rainbow-delimiters-mode t)
   (show-paren-mode t)

@@ -1,4 +1,5 @@
 (lazy-emacs/require-package 'swiper 'counsel)
+(lazy-emacs/require-package 'counsel-tramp)
 
 (ivy-mode 1)
 

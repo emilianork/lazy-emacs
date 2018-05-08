@@ -20,6 +20,8 @@
   (lazy-emacs/load-cider)
   (lazy-emacs/load-dumb-jump)
 
+  (lazy-emacs/diminish-minor-modes)
+
   (aggressive-indent-mode t)
   (company-mode t)
   (dumb-jump-mode t)
@@ -27,7 +29,6 @@
   (paredit-mode t)
   (rainbow-delimiters-mode t)
   (show-paren-mode t)
-  (which-func-mode)
 
   (lazy-emacs/clojure-mode-keys))
 

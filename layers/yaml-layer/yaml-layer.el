@@ -4,6 +4,9 @@
         (lazy-emacs/require-package 'yaml-mode)))
 
   (lazy-emacs/load-magit)
+
+  (lazy-emacs/diminish-minor-modes)
+
   (yaml-mode)
 
   (lazy-emacs/yaml-mode-keys))

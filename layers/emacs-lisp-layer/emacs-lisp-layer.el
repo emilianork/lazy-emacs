@@ -8,14 +8,15 @@
   (lazy-emacs/load-magit)
   (lazy-emacs/load-dumb-jump)
 
+  (lazy-emacs/diminish-minor-modes)
+
   (aggressive-indent-mode t)
   (company-mode t)
   (dumb-jump-mode t)
   (editorconfig-mode t)
   (paredit-mode t)
   (rainbow-delimiters-mode t)
-  (show-paren-mode t)
-  (which-func-mode))
+  (show-paren-mode t))
 
 (defun lazy-emacs/elisp-mode-keys ()
   "Special keys for emacs-lisp-mode"
